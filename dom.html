@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM</title>
+    <style>
+        article {
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 6px;
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h3>Explore DOM</h3>
+            <article>
+                <h3>article-1</h3>
+                <p class="author">autor-1</p>
+                <p class="desecription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor
+                    consequuntur ipsam exercitationem amet sapiente, adipisci, voluptates error saepe iste architecto
+                    voluptatibus. Dolores earum quibusdam nesciunt ab maiores laborum mollitia?</p>
+            </article>
+            <article>
+                <h3>article-2</h3>
+                <p class="author">autor-2</p>
+                <p class="desecription">Sed ducimus ipsa atque debitis voluptate cupiditate laborum. Maiores inventore,
+                    atque accusantium, corrupti in dignissimos facilis suscipit vero odit sint labore molestias
+                    temporibus minus, ducimus totam ipsa nobis dicta explicabo?</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">autor-3</p>
+                <p class="desecription">Numquam accusantium quis incidunt saepe. Quos omnis iure, error reprehenderit
+                    ipsa expedita in hic doloribus, quod laborum ab dolores itaque aut suscipit, aperiam deserunt fugit
+                    officiis distinctio consequuntur ea. Et?</p>
+            </article>
+ 
+        </section>
+    
+
+    
+    </main>
+
+
+
+
+    <script>
+        var author = document.getElementsByClassName('author');
+        for(var i = 0; i < author.length; i++){
+            var element = author[i];
+            console.log(element.innerHTML);
+            element.innerHTML = 
+            element.style.backgroundColor = 'darkgreen';
+            element.style.fontSize = '23px'
+        }
+
+        
+    </script>
+</body>
+
+</html>
